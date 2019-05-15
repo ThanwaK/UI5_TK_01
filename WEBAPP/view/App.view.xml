@@ -1,0 +1,46 @@
+<mvc:View
+   controllerName="sap.ui.demo.walkthrough.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+	<!--<Text text="Hello World"/>-->
+<!--<Toolbar>-->
+<!--        <ToolbarSpacer/>-->
+<!--        <Button text="Check" press="onPress" />-->
+<!--        <Button text="Approve" press="onPress" >-->
+<!--        	<layoutData>-->
+<!--            <FlexItemData growFactor="1" />-->
+<!--          </layoutData>-->
+<!--        </Button>-->
+        <!--<Button icon="sap-icon://action" press="onPress" />-->
+<!--        <ToolbarSpacer/>-->
+<!--      </Toolbar>-->
+      
+  <Table>
+    <items></items><!-- sap.m.ListItemBase -->
+    <columns>
+        <Column>
+            <Label text="Date"/>
+        </Column>
+        <Column>
+            <Label text="Fuctional Location"/>
+        </Column>
+        <Column>
+            <Label text="Measurement Position"/>
+        </Column>
+        <Column>
+            <Label text="Description Measurement Point"/>
+        </Column>
+        <Column>
+            <Label text="Create By"/>
+        </Column>
+        <Column>
+            <Label text="Check By"/>
+        </Column>
+        <Column>
+            <Label text="Approve By"/>
+        </Column>
+    </columns><!-- sap.m.Column -->
+</Table>
+<Button id="ADD_NEW_BT" text="Add New" press="onOpenDialog"
+         class="sapUiSmallMarginEnd" />
+</mvc:View>
